@@ -85,32 +85,38 @@
     				if($lang == 'ar'){
 						 echo '<ul class=" nav navbar-nav">
                                 <li class="active">
-                                    <a href="#">الرئيسية</a>
+                                    <a href="#home">الرئيسية</a>
                                 </li>
                                 <li>
-                                    <a href="#about">عن الشركة</a>
+                                    <a href="#about">من نحن</a>
                                 </li>
                                 <li>
                                     <a href="#">منتجاتنا</a>  
-                                </li>    
+                                </li> 
+								<li>
+                                    <a href="#services">الخدمات</a>
+                                </li>
                                 <li class="submenu-direction">
-                                    <a href="#">اتصل بنا</a>
+                                    <a href="#contact">اتصل بنا</a>
                                    
                                 </li>
                             </ul>'; 
 						}elseif($lang == 'en'){
 						echo '<ul class=" nav navbar-nav">
                                 <li class="active">
-                                    <a href="#">Home</a>
+                                    <a href="#home">Home</a>
                                 </li>
                                 <li>
                                     <a href="#about">About us</a>
                                 </li>
                                 <li>
                                     <a href="#">Product</a>  
-                                </li>    
+                                </li> 
+								<li>
+                                    <a href="#services">Services</a>
+                                </li>
                                 <li class="submenu-direction">
-                                    <a href="#">Contact us</a>
+                                    <a href="#contact">Contact us</a>
                                    
                                 </li>
                             </ul>'; 

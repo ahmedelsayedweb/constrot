@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,700');
+body {
+    font-family: 'Cairo', sans-serif;
+}
 .navbar-nav>li {
     float: right;
 }
@@ -16,6 +20,7 @@
 }
 .wt-icon-box-wraper.left .icon-xld, .wt-icon-box-wraper.left .icon-xl, .wt-icon-box-wraper.left .icon-lg, .wt-icon-box-wraper.left .icon-md, .wt-icon-box-wraper.left .icon-sm, .wt-icon-box-wraper.left .icon-xs {
     float: right;
+	font-family: 'Cairo', sans-serif;
     margin-left: 10px;
     margin-right: 0;
 }
@@ -35,6 +40,7 @@
 h2.text-uppercase.text-white.m-a0.p-t15 {
     font-size: 30px;
     direction: rtl;
+	font-family: 'Cairo', sans-serif;
     text-align: center;
 }
 .col-md-6.col-sm-6 {
@@ -70,4 +76,14 @@ input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required ,textarea.wpcf7-
 .icon-content {
     overflow: hidden;
     direction: rtl;
+	font-family: 'Cairo', sans-serif;
+}
+.about-types .icon-content {
+	min-height: 169px;
+}
+.col-md-4 {
+    float: right;
+}
+#services .icon-content {
+	min-height: 124px;
 }

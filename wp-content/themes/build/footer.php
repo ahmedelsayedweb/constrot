@@ -20,7 +20,15 @@
                         </div> 
                         <div class="col-md-6 col-sm-6">
                             <div class="widget widget_newsletter">
-                                <h4 class="widget-title">Contact Us</h4>
+															 <?php
+  	$lang = custom_get_current_lang();
+	if($lang == 'ar'){
+		 echo '<h4 class="widget-title">اتصل بنا</h4>'; 
+		}elseif($lang == 'en'){
+		echo '<h4 class="widget-title">Contact Us</h4>'; 
+	};
+	?>
+                                
                                 <div class="newsletter-bx">
                                    	<?php
 				  $lang = custom_get_current_lang();
@@ -103,7 +111,7 @@
                 <div class="constrot-strip"></div>
                 <div class="container p-t30">
                     <div class="row"> 
-						<span class="copyrights-text text-center">© <?php echo date ('Y'); ?> Your Company. All Rights Reserved. Designed By Constrot.</span>
+						<span class="copyrights-text text-center">© <?php echo date ('Y'); ?> .  All Rights Reserved. Designed By psolvingegypt.com.</span>
                     </div>
                 </div>
             </div>

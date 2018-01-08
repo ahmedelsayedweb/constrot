@@ -13,7 +13,7 @@
 	}
     ?>
 <!-- CONTENT START -->
-        <div class="page-content">
+        <div id="home" class="page-content">
         
             <!-- SLIDER START -->
             <div class="main-slider style-two default-banner">
@@ -543,7 +543,7 @@ style="z-index: 13; text-transform:uppercase; font-weight:700;">
                                 </div>
 								<?php echo $description_about; ?>
                                 
-                            </div>
+                            </div></div>
                             <div class="about-types row">
                                 <div class="col-md-6 col-sm-6 p-tb20">
                                     <div class="wt-icon-box-wraper left p-l20  bdr-1 bdr-gray-light">
@@ -570,7 +570,7 @@ style="z-index: 13; text-transform:uppercase; font-weight:700;">
                                 <div class="col-md-6 col-sm-6 p-tb20 ">
                                     <div class="wt-icon-box-wraper left  p-l20 bdr-1 bdr-gray-light">
                                         <div class="icon-sm text-primary">
-                                            <a href="#" class="icon-cell p-t5 center-block"><i class="fa fa-gavel" aria-hidden="true"></i></a>
+                                            <a href="#" class="icon-cell p-t5 center-block"><i class="fa fa-paint-brush" aria-hidden="true"></i></a>
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase m-b0 "><?php echo $icon_t3; ?></h5>
@@ -581,7 +581,7 @@ style="z-index: 13; text-transform:uppercase; font-weight:700;">
                                 <div class="col-md-6 col-sm-6 p-tb20 ">
                                     <div class="wt-icon-box-wraper left p-l20 bdr-1 bdr-gray-light">
                                         <div class="icon-sm text-primary">
-                                            <a href="#" class="icon-cell p-t5 center-block"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+                                            <a href="#" class="icon-cell p-t5 center-block"><i class="fa fa-paint-brush" aria-hidden="true"></i></a>
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase m-b0"><?php echo $icon_t4; ?></h5>
@@ -592,7 +592,7 @@ style="z-index: 13; text-transform:uppercase; font-weight:700;">
 								<div class="col-md-6 col-sm-6 p-tb20 ">
                                     <div class="wt-icon-box-wraper left p-l20 bdr-1 bdr-gray-light">
                                         <div class="icon-sm text-primary">
-                                            <a href="#" class="icon-cell p-t5 center-block"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+                                            <a href="#" class="icon-cell p-t5 center-block"><i class="fa fa-paint-brush" aria-hidden="true"></i></a>
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase m-b0"><?php echo $icon_t5; ?></h5>
@@ -603,7 +603,7 @@ style="z-index: 13; text-transform:uppercase; font-weight:700;">
 								<div class="col-md-6 col-sm-6 p-tb20 ">
                                     <div class="wt-icon-box-wraper left p-l20 bdr-1 bdr-gray-light">
                                         <div class="icon-sm text-primary">
-                                            <a href="#" class="icon-cell p-t5 center-block"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+                                            <a href="#" class="icon-cell p-t5 center-block"><i class="fa fa-paint-brush" aria-hidden="true"></i></a>
                                         </div>
                                         <div class="icon-content">
                                             <h5 class="wt-tilte text-uppercase m-b0"><?php echo $icon_t6; ?></h5>
@@ -622,7 +622,7 @@ style="z-index: 13; text-transform:uppercase; font-weight:700;">
 				$images = explode( ',', ot_get_option( 'gallery', '' ) );
 ?>        
             <!-- LATEST PROJECT SECTION START -->
-            <div class="section-full p-t80" style="background-image:url(images/background/bg-4.png); background-repeat:repeat;background-color:#273447; ">
+            <div class="section-full p-t50" style="background-image:url(images/background/bg-4.png); background-repeat:repeat;background-color:#273447; ">
             	<div class="overlay-main"></div>
                 <div class="container">
                     <div class="section-head">
@@ -699,12 +699,12 @@ style="z-index: 13; text-transform:uppercase; font-weight:700;">
                         </div>
                     </div>
                     <!-- TITLE END-->
-                    <div class="section-content">
+                    <div id="services" class="section-content">
                         <div class="row">
                         <?php
 						$args = array(
 								'post_type' => 'services',
-								'posts_per_page' => 6,
+								'posts_per_page' => 10,
 						);
 						$team_query = new WP_Query( $args );
 							 ?>
@@ -714,13 +714,9 @@ style="z-index: 13; text-transform:uppercase; font-weight:700;">
 							<?php while ($team_query->have_posts()) : $team_query->the_post(); ?>
                             <div class="col-md-4 col-sm-6 p-tb15">
                                 <div class="wt-icon-box-wraper  p-a20 left bg-white">
-                                    <div class="icon-sm text-primary m-b20">
-                                        <a href="#" class="icon-cell"><i class="<?php the_field('icon'); ?>" aria-hidden="true"></i></a>
-                                    </div>
                                     <div class="icon-content">
                                         <h5 class="wt-tilte text-uppercase"><?php the_title(); ?></h5>
                                         <div class="wt-separator bg-primary"></div>
-                                        <?php the_excerpt(); ?>
                                     </div>
                                 </div>
                             </div>
@@ -735,6 +731,6 @@ style="z-index: 13; text-transform:uppercase; font-weight:700;">
             <!-- WHY CHOOSE US SECTION END -->                         
         </div>
         <!-- CONTENT END -->
-<footer class="site-footer footer-dark">
+<footer id="contact" class="site-footer footer-dark">
 
 <?php get_footer(); ?>
